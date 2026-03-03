@@ -1,0 +1,7 @@
+# activeContext.md
+
+**Focus: Native Alchemist Loop**
+* **Current Task:** Finalizing `patchiest` AST mutation logic.
+* **Recent Changes:** Implemented `patchiest/__main__.py` to allow execution with `python -m patchiest`; Implemented TUI auto-focus on the `#prompt` input area upon startup; Respected `.gitignore` and `__pycache__` exclusions natively during file traversal by switching `list_files` tool to use the `pathspec` library; Added real-time internal action logging to the left `#logs` column for file reads and transmutations; Completely rewrote the TUI using the `textual` framework to solve input visibility issues and provide a robust async architecture; Fixed TUI element to rename "Control Deck" to "Prompt" and ensured raw user input is visible by mitigating `rich.Live` redraw collisions; Restructured `athanor` and `patchiest` into standard nested package formats; established a global `athanor` CLI command via `~/.local/bin` symlink; updated `.bashrc` to include local binaries in `PATH`; Created README.md files for both `athanor` and `patchiest` packages.
+* **Next Steps:** Finalize the native Python AST logic for `MANAGE_IMPORT` actions; implement `git_commit` tool.
+* **Learnings:** Standard nested package structures are essential for reliable `setuptools` editable installations and entry point discovery in Python 3.14.
