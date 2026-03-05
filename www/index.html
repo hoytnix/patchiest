@@ -35,6 +35,7 @@
                     <a href="#protocol">Protocol</a>
                     <a href="#performance">Performance</a>
                     <a href="#stack">Stack</a>
+                    <a href="#progress">Progress</a>
                     <a href="#polyglot">Polyglot</a>
                 </nav>
             </div>
@@ -99,7 +100,7 @@
                             <span class="label">Build Latency</span>
                         </div>
                     </div>
-                    <p class="text-center">Engineered for Python 3.14 Sovereignty.</p>
+                    <p class="text-center">Engineered for Rust-Native Performance & Sovereignty.</p>
                 </div>
             </section>
 
@@ -113,12 +114,41 @@
                         </div>
                         <div class="stack-item">
                             <h3>Patchiest</h3>
-                            <p>Native Python runtime for AST-deterministic mutations with transactional reliability.</p>
+                            <p>Native Rust engine for AST-deterministic mutations with transactional reliability and
+                                zero-cost abstractions.</p>
                         </div>
                         <div class="stack-item">
-                            <h3>Python 3.14</h3>
-                            <p>Leveraging tail-call optimization and the latest high-performance interpreter patterns.
+                            <h3>Rust 2021</h3>
+                            <p>Leveraging memory safety, fear-less concurrency, and the high-performance LLVM-based
+                                compiler.
                             </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="progress">
+                <div class="container">
+                    <h2>Current Progress & Status</h2>
+                    <div class="grid stack-grid">
+                        <div class="stack-item">
+                            <h3 style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="cpu"
+                                    style="width: 1.25rem; height: 1.25rem;"></i> Rust Engine</h3>
+                            <p>Full programmatic AST mutation engine. Modularized into models, registry, and helpers for
+                                maximum maintainability.</p>
+                        </div>
+                        <div class="stack-item">
+                            <h3 style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="shield-check"
+                                    style="width: 1.25rem; height: 1.25rem;"></i> 100% Coverage</h3>
+                            <p>Comprehensive unit and integration test suite with verified 100% coverage via
+                                <code>cargo-tarpaulin</code>.
+                            </p>
+                        </div>
+                        <div class="stack-item">
+                            <h3 style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="terminal"
+                                    style="width: 1.25rem; height: 1.25rem;"></i> Athanor TUI</h3>
+                            <p>Adaptive textual-based terminal interface with real-time logs and auto-focusing inputs
+                                mapped to <code>~/.local/bin/athanor</code>.</p>
                         </div>
                     </div>
                 </div>
@@ -127,8 +157,10 @@
             <section id="polyglot">
                 <div class="container">
                     <h2>Polyglot Support Matrix (Roadmap)</h2>
-                    <p class="roadmap-warning">Roadmap preview only — current end-to-end implementation maturity is
-                        approximately <strong>5%</strong>.</p>
+                    <p class="roadmap-warning">Roadmap preview only — while our native Rust engine and Athanor
+                        orchestrator are fully functional, end-to-end polyglot integration is currently at approximately
+                        <strong>5%</strong>.
+                    </p>
                     <div class="table-wrap">
                         <table class="support-table">
                             <thead>
@@ -168,7 +200,7 @@
                                     <td>Python</td>
                                     <td>✅</td>
                                     <td>✅ (componentize-py)</td>
-                                    <td>Current implementation center.</td>
+                                    <td>Athanor orchestration layer.</td>
                                 </tr>
                                 <tr>
                                     <td>Ruby</td>
