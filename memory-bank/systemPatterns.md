@@ -2,7 +2,11 @@
 
 **Architecture & Design**
 * **Athanor (The Orchestrator):** The `athanor/athanor/athanor.py` CLI which manages the TUI, the Gemini session, and the background file watcher.
-* **Quintessence (The Runtime):** A native Python environment utilizing the `patchiest/patchiest/patchiest.py` engine for AST-deterministic mutations.
+* **Quintessence (The Runtime):** A native Python environment utilizing the `patchiest` Rust engine for AST-deterministic mutations.
+    * `src/models.rs`: Core data structures and serializable actions.
+    * `src/registry.rs`: Boutique recipe management.
+    * `src/helpers.rs`: AST manipulation and snippet transformation utilities.
+    * `src/main.rs`: Orchestration and CLI entry point.
 * **Patchiest Protocol:** A strict, discriminated union of actions (`TRANSLATE_DIALECT`, `MUTATE_CALL`, etc.) that Gemini must fulfill to interact with the codebase.
 * **Agentic Phases:**
     1.  **Discover:** `list_files` identifies project topology.
