@@ -1,7 +1,10 @@
 # activeContext.md
 
-**Focus: Native Alchemist Loop**
-* **Current Task:** Finalizing `patchiest` AST mutation logic.
-* **Recent Changes:** Updated web app in `www/` to reflect MIT License and added Athanor link (`https://athanor.alchememe.com`) in the Sovereign Architecture section; Created a modern SPA PWA in the `www/` directory to highlight the Patchiest project, including a native Python `server.py` using `starlette`; Implemented `patchiest/__main__.py` to allow execution with `python -m patchiest`; Implemented TUI auto-focus on the `#prompt` input area upon startup; Respected `.gitignore` and `__pycache__` exclusions natively during file traversal by switching `list_files` tool to use the `pathspec` library; Added real-time internal action logging to the left `#logs` column for file reads and transmutations; Completely rewrote the TUI using the `textual` framework to solve input visibility issues and provide a robust async architecture; Fixed TUI element to rename "Control Deck" to "Prompt" and ensured raw user input is visible by mitigating `rich.Live` redraw collisions; Restructured `athanor` and `patchiest` into standard nested package formats; established a global `athanor` CLI command via `~/.local/bin` symlink; updated `.bashrc` to include local binaries in `PATH`; Created README.md files for both `athanor` and `patchiest` packages.
-* **Next Steps:** Finalize the native Python AST logic for `MANAGE_IMPORT` actions; implement `git_commit` tool.
+**What Works:** 
+    * **Patchiest Rust Engine:** Full programmatic AST mutation engine supporting `ast-grep` programmatic API, polyglot structural surgery, and atomic transactions.
+    * **SPA PWA:** Modern dark-mode SPA in `www/` featuring glitch animations, PWA support, MIT License, Athanor integration, and a native Python `server.py` using `starlette`.
+    * **TUI Focus:** Auto-focusing prompt on TUI start; native gitignore respect during agent file traversal via `pathspec` library; Real-time tool action logging within the left column; Core package renamed to `athanor` with full CLI and TUI alignment; standard nested package structure implemented; global CLI command `athanor` available via `~/.local/bin`; Full-screen adaptive TUI layout completely rebuilt using `textual` for proper input handling.
+* **What's Left:**
+    * Implement `git_commit` tool for agentic work saving.
+    * Expand `RecipeRegistry` with ready-to-use boutique codemods.
 * **Learnings:** Standard nested package structures are essential for reliable `setuptools` editable installations and entry point discovery in Python 3.14.
