@@ -12,6 +12,10 @@
 * **Dependencies:** `ast-grep-core`, `ast_grep_language`, `serde`, `serde_json`, `anyhow` (Rust); `textual`, `starlette`, `pathspec` (Python)
 * **Binary Path:** `~/.local/bin/patchiest` (pointing to Rust target)
 
+**Testing & Coverage**
+* **Standard Tests:** `cargo test`
+* **Coverage Report:** `cargo tarpaulin --ignore-tests --out html` (generates `tarpaulin-report.html`)
+
 **Technical Constraints**
 * **Sovereign Architecture:** Local-first, node-less, high-performance.
 * **Transactional Reliability:** Atomic file writes with automatic rollbacks.

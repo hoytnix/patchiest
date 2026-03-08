@@ -35,6 +35,26 @@ cargo run --manifest-path patchiest/Cargo.toml -- action.json
 cat action.json | cargo run --manifest-path patchiest/Cargo.toml --
 ```
 
+## Testing & Coverage
+
+### Run Test Suite
+
+To run the Rust test suite:
+
+```bash
+cargo test
+```
+
+### Coverage Report
+
+To generate an HTML coverage report using `tarpaulin`:
+
+```bash
+cargo tarpaulin --ignore-tests --out html
+```
+
+The report will be generated at `tarpaulin-report.html` in the project root.
+
 Sample payload:
 
 ```json
